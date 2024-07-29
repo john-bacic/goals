@@ -374,7 +374,8 @@ function initChart() {
           ctx.stroke()
 
           // Prepare the label text
-          const labelText = formatShortCurrency(yearValue)
+          // const labelText = formatShortCurrency(yearValue)
+          const labelText = formatCurrency(yearValue) // Use formatCurrency instead of formatShortCurrency
           ctx.font = '12px Arial'
           const textMetrics = ctx.measureText(labelText)
           const textWidth = textMetrics.width
@@ -426,7 +427,7 @@ function initChart() {
           ctx.fillStyle = '#FFFFFF' // White text color, or choose a color that contrasts well with orange
           ctx.textAlign = 'center'
           ctx.textBaseline = 'middle'
-          ctx.fillText(labelText, x, rectY + rectHeight / 2)
+          ctx.fillText(labelText, x, rectY + rectHeight / 2 + 1)
 
           ctx.restore()
         },
