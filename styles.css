@@ -53,7 +53,7 @@ body {
 .goal-label {
     font-weight: bold;
     color: #ff7f00; /* Orange color */
-    font-size: 17px; /* Adjust according to your base size, assuming base size is 15px */
+    font-size: 18px; 
 }
 
 
@@ -79,7 +79,7 @@ body {
     border-radius: 10px;
     color: #2a2a2a;
     padding: 15px 20px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.03);
+    box-shadow: 0 0 15px rgba(0,0,0,0.03);
 }
 
 
@@ -161,7 +161,7 @@ body {
 }
 
 .chart-labels {
-    font-size: 10px; 
+
     padding-right: 45px; 
     display: flex;
     justify-content: space-between;
@@ -189,7 +189,7 @@ body {
 
 .slider-container label {
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .slider-container input[type="range"] {
@@ -200,7 +200,7 @@ body {
 .slider-container span {
     flex: 1;
     text-align: right;
-    font-size: 14px;
+
 }
 
 /* Existing styles for the range input */
