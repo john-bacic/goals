@@ -20,10 +20,15 @@ body {
 .account-info {
 
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
-    /* background-color: #ff7f00; */
+    background-color: #ff7f00;
+}
+
+.account-info-title {
+
+    white-space: nowrap;
 }
 
 .account-info h1 {
@@ -33,11 +38,12 @@ body {
 }
 
 .input-wrapper {
-    position: relative; 
-    /* /* display: flex; */
+    /* position: relative; */
+    /* display: inline-block; */
     /* justify-content: space-between; */
     /* align-items: center;  */
-    /* background-color: #007bff; */
+        /* max-width: 50%;  */
+    background-color: #007bff;
 }
 
 #accountValue {
@@ -46,16 +52,13 @@ body {
     background: none;
     font-weight: bold;
     text-align: right;
-    max-width: 75%; 
+    /* max-width: 50%;  */
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
 
 
-.input-wrapper {
-    position: relative;
-    display: inline-block;
-}
+
 
 .currency-symbol {
     font-size: 18px;
