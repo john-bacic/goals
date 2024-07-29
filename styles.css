@@ -77,7 +77,7 @@ body {
     border-radius: 10px;
     color: #2a2a2a;
     padding: 15px 20px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        box-shadow: 0 0 8px rgba(0,0,0,0.075);
 }
 
 
@@ -108,7 +108,7 @@ body {
 .sliders label {
     
     /* font-weight: bold; */
-    margin-top: 10px;
+    margin-top: 0px;
     color: rgb(111, 111, 111);
 }
 
