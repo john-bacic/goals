@@ -53,8 +53,9 @@ body {
 
 .goal-label {
     font-weight: bold;
-    color: #ff7f00; /* Orange color */
-    font-size: 18px; 
+    /* color: #ff7f00;  */
+    color: #070707; /* Orange color */
+    font-size: 14px; 
 }
 
 
