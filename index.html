@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Goal Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="account-info">
+            <h1>Account value</h1>
+            <div class="input-wrapper">
+                <span class="currency-symbol">$</span>
+                <input type="text" id="accountValue" value="1,000">
+            </div>
+        </div>
+        
+        <div class="period-buttons">
+            <button data-months="1">1 Month</button>
+            <button data-months="12" class="selected">1 Year</button>
+            <button data-months="36">3 Years</button>
+            <button data-months="60">5 Years</button>
+            <button data-months="120">10 Years</button>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="savingsChart"></canvas>
+            <div class="chart-labels">
+                <span id="leftLabel">Today</span>
+                <span id="middleLabel">6M</span>
+                <span id="rightLabel">1Y</span>
+            </div>
+        </div>
+        
+        <div class="sliders">
+            <div class="slider-container">
+                <label for="goalSlider">Goal</label>
+                <input type="range" id="goalSlider" min="1000" max="10000" step="1000" value="3000">
+                <span id="goalValue">$3,000</span>
+            </div>
+            
+            <div class="slider-container">
+                <label for="dateSlider">Achieved by</label>
+                <input type="range" id="dateSlider" min="1" max="120" value="12">
+                <span id="dateValue"></span>
+            </div>
+            
+            <div class="slider-container">
+                <label for="aspSlider">ASP</label>
+                <input type="range" id="aspSlider" min="1" max="1000" step="1" value="34">
+                <span id="aspValue">$34/week</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
