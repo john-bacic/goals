@@ -536,7 +536,7 @@ function adjustInputWidth() {
   const input = document.getElementById('accountValue')
   const valueLength = input.value.length
   const maxLength = 15 // Adjust based on maximum expected length
-  const baseWidth = 80 // Minimum width
+  const baseWidth = 20 // Minimum width
   const extraWidth = 10 // Additional width per character
 
   // Calculate the new width
@@ -547,11 +547,11 @@ function adjustInputWidth() {
   input.style.width = newWidth + 'px'
 }
 
-// Adjust input width on load and on input
-window.addEventListener('load', adjustInputWidth)
+// Call formatAccountValue on input change and on load
 document
   .getElementById('accountValue')
-  .addEventListener('input', adjustInputWidth)
+  .addEventListener('input', formatAccountValue)
+window.addEventListener('load', formatAccountValue)
 
 // Initialization
 initChart()
