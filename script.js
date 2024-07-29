@@ -427,7 +427,7 @@ function initChart() {
           ctx.fillStyle = '#FFFFFF' // White text color, or choose a color that contrasts well with orange
           ctx.textAlign = 'center'
           ctx.textBaseline = 'middle'
-          ctx.fillText(labelText, x, rectY + rectHeight / 2 + 1)
+          ctx.fillText(labelText, x, rectY + rectHeight / 2)
 
           ctx.restore()
         },
