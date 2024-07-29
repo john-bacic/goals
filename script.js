@@ -379,6 +379,8 @@ function initChart() {
           ctx.textAlign = 'center'
           ctx.textBaseline = 'bottom'
           ctx.fillText(formatShortCurrency(yearValue), x, y - 10)
+
+          ctx.restore()
         },
       },
     ],
