@@ -181,7 +181,7 @@ function updateASP() {
   aspSlider.value = Math.max(Math.round(weeklyContribution), 1)
   aspValue.textContent = `${formatCurrency(
     Math.max(Math.round(weeklyContribution), 1)
-  )}/week`
+  )} / week`
   updateSliderColor(aspSlider)
 }
 
