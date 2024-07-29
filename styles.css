@@ -46,10 +46,10 @@ body {
 .currency-symbol {
     font-size: 18px;
     font-weight: bold;
-    position: absolute;
-    padding-right: 10px;
-    left: 20px;
-    top: 50%;
+    /* position: absolute; */
+    /* padding-right: 10px; */
+    /* left: 20px; */
+    /* top: 50%; */
     transform: translateY(-50%);
     pointer-events: none;
 }
