@@ -406,7 +406,7 @@ Chart.register({
     ctx.lineTo(x, bottom)
     ctx.lineWidth = options.width || 2
     ctx.strokeStyle = options.color || '#007bff'
-    ctx.setLineDash([5, 5]) // This creates a dashed line with dashes and gaps of 5px each
+    ctx.setLineDash([2, 5]) // This creates a dashed line with dashes and gaps of 5px each
     ctx.stroke()
     ctx.restore()
   },
