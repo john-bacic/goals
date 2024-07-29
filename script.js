@@ -531,6 +531,28 @@ accountValueInput.addEventListener('blur', () => {
   updateGoalSliderRange()
 })
 
+//adjust Account value window width
+function adjustInputWidth() {
+  const input = document.getElementById('accountValue')
+  const valueLength = input.value.length
+  const maxLength = 15 // Adjust based on maximum expected length
+  const baseWidth = 80 // Minimum width
+  const extraWidth = 10 // Additional width per character
+
+  // Calculate the new width
+  const newWidth = Math.min(
+    baseWidth + valueLength * extraWidth,
+    window.innerWidth - 40
+  ) // 40px margin
+  input.style.width = newWidth + 'px'
+}
+
+// Adjust input width on load and on input
+window.addEventListener('load', adjustInputWidth)
+document
+  .getElementById('accountValue')
+  .addEventListener('input', adjustInputWidth)
+
 // Initialization
 initChart()
 initializeSliders()

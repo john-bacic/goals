@@ -31,12 +31,15 @@ body {
 
 #accountValue {
     font-size: 18px;
-    width: 80px;
-    text-align: right;
     border: none;
     background: none;
     font-weight: bold;
+    text-align: right;
+    max-width: 100%; /* Ensure the input does not exceed container width */
+    padding-left: 25px; /* Adjust based on the width of your currency symbol */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
+
 
 .input-wrapper {
     position: relative;
