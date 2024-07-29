@@ -367,18 +367,66 @@ function initChart() {
           // Draw the circle
           ctx.beginPath()
           ctx.arc(x, y, 5, 0, 2 * Math.PI)
-          ctx.fillStyle = 'white' // Orange color to match the line
+          ctx.fillStyle = 'white'
           ctx.fill()
           ctx.strokeStyle = '#ff7f00'
           ctx.lineWidth = 3
           ctx.stroke()
 
-          // Draw the label
-          ctx.fillStyle = '#000000'
+          // Prepare the label text
+          const labelText = formatShortCurrency(yearValue)
           ctx.font = '12px Arial'
+          const textMetrics = ctx.measureText(labelText)
+          const textWidth = textMetrics.width
+          const textHeight = 12 // Approximate height of the text
+
+          // Draw the blue background
+          ctx.fillStyle = '#ff7f00' // Orange color
+          const padding = 6 // Increased padding for more space
+          const cornerRadius = 4 // 4px round corners
+
+          // Calculate rectangle dimensions
+          const rectWidth = textWidth + padding * 2
+          const rectHeight = textHeight + padding * 2
+          const rectX = x - rectWidth / 2
+          // const rectY = y - textHeight - padding * 2 - 14 // Moved up slightly
+          const rectY = y - textHeight - padding * 2 - 4 // Moved down 10px (changed from -14 to -4)
+
+          // Draw rounded rectangle
+          ctx.beginPath()
+          ctx.moveTo(rectX + cornerRadius, rectY)
+          ctx.lineTo(rectX + rectWidth - cornerRadius, rectY)
+          ctx.quadraticCurveTo(
+            rectX + rectWidth,
+            rectY,
+            rectX + rectWidth,
+            rectY + cornerRadius
+          )
+          ctx.lineTo(rectX + rectWidth, rectY + rectHeight - cornerRadius)
+          ctx.quadraticCurveTo(
+            rectX + rectWidth,
+            rectY + rectHeight,
+            rectX + rectWidth - cornerRadius,
+            rectY + rectHeight
+          )
+          ctx.lineTo(rectX + cornerRadius, rectY + rectHeight)
+          ctx.quadraticCurveTo(
+            rectX,
+            rectY + rectHeight,
+            rectX,
+            rectY + rectHeight - cornerRadius
+          )
+          ctx.lineTo(rectX, rectY + cornerRadius)
+          ctx.quadraticCurveTo(rectX, rectY, rectX + cornerRadius, rectY)
+          ctx.closePath()
+
+          ctx.fill()
+
+          // Draw the label
+          ctx.fillStyle = '#FFFFFF' // White text color, or choose a color that contrasts well with orange
           ctx.textAlign = 'center'
-          ctx.textBaseline = 'bottom'
-          ctx.fillText(formatShortCurrency(yearValue), x, y - 10)
+          ctx.textBaseline = 'middle'
+          ctx.fillText(labelText, x, rectY + rectHeight / 2)
 
           ctx.restore()
         },
