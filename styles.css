@@ -18,32 +18,23 @@ body {
 }
 
 .account-info {
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Space between the two main divs */
+    align-items: center; /* Align items vertically center */
     margin-bottom: 20px;
-    background-color: #ff7f00;
 }
 
 .account-info-title {
-
-    white-space: nowrap;
-}
-
-.account-info h1 {
     font-size: 18px;
-    margin: 0;
-    white-space: nowrap;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents wrapping */
+    margin-right: 20px; /* Adjust spacing as needed */
 }
 
 .input-wrapper {
-    /* position: relative; */
-    /* display: inline-block; */
-    /* justify-content: space-between; */
-    /* align-items: center;  */
-        /* max-width: 50%;  */
-    background-color: #007bff;
+    flex-grow: 1; /* Makes the input wrapper take available space */
+    display: flex;
+    justify-content: flex-end; /* Align input field to the right */
 }
 
 #accountValue {
@@ -52,9 +43,11 @@ body {
     background: none;
     font-weight: bold;
     text-align: right;
-    /* max-width: 50%;  */
+    width: 100%; /* Makes input field take full width of wrapper */
+    max-width: 150px; /* Set a max width if needed */
     box-sizing: border-box; /* Include padding in width calculation */
 }
+
 
 
 
