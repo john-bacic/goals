@@ -110,16 +110,25 @@ body {
 
 .period-buttons button {
     padding: 8px 12px;
-    border: none;
-    background-color: #f0f0f0;
+    /* border: none; */
+    color: #007bff;
+    background-color: #f0f7ff;
+    border: #f0f7ff;
+    border-style: solid;
+    border-width: 1px;
+
     border-radius: 20px;
     cursor: pointer;
     font-size: 12px;
 }
 
 .period-buttons button.selected {
-    background-color: #007bff;
-    color: white;
+    color: #007bff;
+    background-color: #f0f7ff;
+    border: #007bff;
+    border-style: solid;
+    border-width: 1px;
+   
 }
 
 .chart-container {
