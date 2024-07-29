@@ -74,10 +74,12 @@ body {
 .slider-container{
    /* font-size: 9px; */
     /* font-weight: bold; */
+    border-style: solid;
+    border-color: #f3f3f3;
     border-radius: 10px;
     color: #2a2a2a;
     padding: 15px 20px;
-        box-shadow: 0 0 8px rgba(0,0,0,0.075);
+        box-shadow: 0 0 15px rgba(0,0,0,0.03);
 }
 
 
