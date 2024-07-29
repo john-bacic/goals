@@ -532,26 +532,26 @@ accountValueInput.addEventListener('blur', () => {
 })
 
 //adjust Account value window width
-function adjustInputWidth() {
-  const input = document.getElementById('accountValue')
-  const valueLength = input.value.length
-  const maxLength = 15 // Adjust based on maximum expected length
-  const baseWidth = 20 // Minimum width
-  const extraWidth = 10 // Additional width per character
+// function adjustInputWidth() {
+//   const input = document.getElementById('accountValue')
+//   const valueLength = input.value.length
+//   const maxLength = 15 // Adjust based on maximum expected length
+//   const baseWidth = 20 // Minimum width
+//   const extraWidth = 10 // Additional width per character
 
-  // Calculate the new width
-  const newWidth = Math.min(
-    baseWidth + valueLength * extraWidth,
-    window.innerWidth - 40
-  ) // 40px margin
-  input.style.width = newWidth + 'px'
-}
+//   // Calculate the new width
+//   const newWidth = Math.min(
+//     baseWidth + valueLength * extraWidth,
+//     window.innerWidth - 40
+//   ) // 40px margin
+//   input.style.width = newWidth + 'px'
+// }
 
-// Call formatAccountValue on input change and on load
-document
-  .getElementById('accountValue')
-  .addEventListener('input', formatAccountValue)
-window.addEventListener('load', formatAccountValue)
+// // Call formatAccountValue on input change and on load
+// document
+//   .getElementById('accountValue')
+//   .addEventListener('input', formatAccountValue)
+// window.addEventListener('load', formatAccountValue)
 
 // Initialization
 initChart()

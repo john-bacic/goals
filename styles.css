@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f0f0f0;
-
+    white-space: nowrap;
 
 
 }
@@ -21,8 +21,9 @@ body {
 
     display: flex;
     /* justify-content: space-between; */
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 20px;
+    /* background-color: #ff7f00; */
 }
 
 .account-info h1 {
@@ -32,10 +33,10 @@ body {
 }
 
 .input-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-between;/* Align content to the right */
-    align-items: center; 
+    position: relative; 
+    /* /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center;  */
     /* background-color: #007bff; */
 }
 
@@ -45,7 +46,7 @@ body {
     background: none;
     font-weight: bold;
     text-align: right;
-    /* max-width: 50%;  */
+    max-width: 75%; 
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
