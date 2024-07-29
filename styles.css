@@ -29,16 +29,24 @@ body {
     margin: 0;
 }
 
+.input-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;/* Align content to the right */
+    align-items: center; 
+    /* background-color: #007bff; */
+}
+
 #accountValue {
     font-size: 18px;
     border: none;
     background: none;
     font-weight: bold;
     text-align: right;
-    max-width: 100%; /* Ensure the input does not exceed container width */
-    padding-left: 25px; /* Adjust based on the width of your currency symbol */
+    /* max-width: 50%;  */
     box-sizing: border-box; /* Include padding in width calculation */
 }
+
 
 
 .input-wrapper {
