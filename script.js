@@ -531,6 +531,13 @@ accountValueInput.addEventListener('blur', () => {
   updateGoalSliderRange()
 })
 
+accountValueInput.addEventListener('blur', () => {
+  updateAccountValueDisplay()
+  updateGoalSliderRange()
+  updateChart()
+  updateASP()
+})
+
 //adjust Account value window width
 // function adjustInputWidth() {
 //   const input = document.getElementById('accountValue')
