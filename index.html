@@ -37,22 +37,27 @@
         <div class="sliders">
             
             <div class="slider-container">
+               <div class="slider-title-value"> 
                 <label for="goalSlider"><span class="goal-label">Goal</span>
-                </label>
+                </label>  <span id="goalValue">$3,000</span></div>
                 <input type="range" id="goalSlider" min="1000" max="10000" step="1000" value="3000">
-                <span id="goalValue">$3,000</span>
+              
             </div>
             
             <div class="slider-container">
-                <label for="dateSlider">Achieved by</label>
+                <div class="slider-title-value"> 
+                <label for="dateSlider">Achieved by</label>  <span id="dateValue"></span>
+                </div>
                 <input type="range" id="dateSlider" min="1" max="120" value="12">
-                <span id="dateValue"></span>
+              
             </div>
             
             <div class="slider-container">
-                <label for="aspSlider">ASP</label>
+                <div class="slider-title-value"> 
+                <label for="aspSlider">ASP</label> <span id="aspValue">$34/week</span>
+                </div>
                 <input type="range" id="aspSlider" min="1" max="500" step="1" value="34">
-                <span id="aspValue">$34/week</span>
+               
             </div>
         </div>
     </div>
